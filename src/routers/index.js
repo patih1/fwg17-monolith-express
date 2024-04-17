@@ -6,6 +6,8 @@ router.get('/', (req, res)=>{
 
 router.use('/users', require('./users.router'))
 
+router.use('/create-user', require('./users.router'))
+
 router.get('/about-us', (req, res)=>{
     return res.render('about-us', {title: "About Us"})
 })
